@@ -170,7 +170,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 150px auto 25px auto;
-    Width: 485px;
+
     Height: 213px;
 }
 
@@ -183,6 +183,7 @@ footer #footer-logo img {
 #footer-social-logo {
     display: flex;
     margin: 0 160px;
+    justify-content: center;
 }
 
 #footer-social-logo img {
@@ -300,7 +301,7 @@ Media Queries
     --------------- */
 
     footer #footer-logo img {
-        max-width: 400px;
+        max-width: 284px;
         display: inherit;
         margin: 0 auto;
     }
