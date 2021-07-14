@@ -1,8 +1,10 @@
 /* ---------------
 common styles
 ----------------- */
-* {
+*,
+html {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -38,8 +40,29 @@ header a {
 
 }
 
+header {
+    transition: .6s;
+}
+
 header img {
     width: 100%;
+    transition: .6s;
+}
+
+header:hover img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+header:hover a {
+    color: #E02C6D;
+    background-color: white;
+    transition: .8s;
+}
+
+header:hover .header-data h1 {
+    color: #E02C6D;
+    transition: .6s;
 }
 
 .header-data,
@@ -50,7 +73,7 @@ header img {
 header h1 {
     font-size: 64px;
     color: #FFFFFF;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: 25px;
 }
 
@@ -81,7 +104,7 @@ header h1 {
 -------------------- */
 .extra-section1 {
     display: flex;
-    height: 450px;
+
     margin: 50px 50px;
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
     padding: 50px 50px;
@@ -93,6 +116,7 @@ header h1 {
 }
 
 .extra-section1 img {
+    width: 100%;
     padding: 50px 0;
 }
 
@@ -100,9 +124,10 @@ header h1 {
     padding: 0 100px;
 }
 
-#tournament-details h3 {
+#tournament-details p {
     margin-top: 150px;
     font-size: 20px;
+    color: black;
 }
 
 /*------------------
@@ -110,9 +135,10 @@ header h1 {
 -------------------- */
 .extra-section2 {
 
-    height: 330px;
+
     background-image: linear-gradient(#534ad1bb, #2D25A0);
 }
+
 
 .extra-section2 h1 {
     text-align: center;
@@ -132,7 +158,8 @@ header h1 {
 .extra-section2 img {
     padding: 10px 90px;
     height: 50px;
-    width: 80px;
+    max-width: 80px;
+    width: 100%;
 }
 
 /*--------------
@@ -168,4 +195,103 @@ footer #footer-logo img {
 #footer-copyright p {
     margin-top: 20px;
     text-align: center;
+}
+
+
+/* --------------------
+Media Queries
+----------------------- */
+
+/* mobile devices */
+@media only screen and (max-width: 768px) {
+
+    .header-data {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .header-image {
+        margin-top: 0px;
+
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    header {
+        display: block;
+
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+
+
+    .players {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 0 0;
+        margin: 5px 35px;
+    }
+
+
+
+    .player h2 {
+        font-size: 25px;
+    }
+
+    .player img {
+        width: 100%;
+
+
+    }
+
+    .extra-section1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .extra-section1 h2 {
+        font-size: 25px;
+    }
+
+    .extra-section2 {
+        width: 100%;
+        padding-bottom: 10px;
+
+    }
+
+
+    #tournament-details {
+        padding: 0;
+    }
+
+    #tournament-details p {
+        margin-top: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        align-items: center;
+    }
+
+    footer #footer-logo img {
+        max-width: 400px;
+        display: inherit;
+        margin: 0 auto;
+    }
+
+    footer {
+        align-items: center;
+        margin: 0;
+    }
+
 }
