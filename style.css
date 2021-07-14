@@ -205,6 +205,9 @@ Media Queries
 /* mobile devices */
 @media only screen and (max-width: 768px) {
 
+    /*-------------
+     Header
+    --------------- */
     .header-data {
         margin-left: 20px;
         margin-top: 0px;
@@ -230,7 +233,9 @@ Media Queries
         padding-top: 40px;
     }
 
-
+    /*---------------
+     players section 
+     ------------------*/
 
     .players {
 
@@ -253,11 +258,18 @@ Media Queries
 
     }
 
+    /*------------------
+    Extra section 01
+    ----------------- */
+
     .extra-section1 {
         flex-direction: column;
         padding: 20px;
     }
 
+    /*------------------
+    Extra section 02
+    ----------------- */
     .extra-section1 h2 {
         font-size: 25px;
     }
@@ -267,7 +279,6 @@ Media Queries
         padding-bottom: 10px;
 
     }
-
 
     #tournament-details {
         padding: 0;
@@ -282,6 +293,10 @@ Media Queries
         margin: 0 0 20px 0;
         align-items: center;
     }
+
+    /*--------------
+    footer section
+    --------------- */
 
     footer #footer-logo img {
         max-width: 400px;
