@@ -170,7 +170,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 150px auto 25px auto;
-
+    width: fit-content;
     Height: 213px;
 }
 
@@ -301,7 +301,7 @@ Media Queries
     --------------- */
 
     footer #footer-logo img {
-        max-width: 284px;
+        max-width: 50%;
         display: inherit;
         margin: 0 auto;
     }
