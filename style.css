@@ -187,7 +187,8 @@ footer #footer-logo img {
 
 #footer-social-logo img {
     height: 35px;
-    width: 35px;
+    width: 100%;
+    max-width: 35px;
     padding: 0 5px;
 }
 
