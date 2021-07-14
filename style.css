@@ -25,7 +25,7 @@ p {
 
 header {
     width: 100%;
-    height: 677px;
+
     background-color: #2D25A0;
     display: flex;
     margin-bottom: 100px;
@@ -95,7 +95,7 @@ header h1 {
 }
 
 .player img {
-    width: 300px;
+    width: 100%;
     height: 256px;
 }
 
@@ -174,8 +174,8 @@ footer {
     Height: 213px;
 }
 
-footer #footer-logo img {
-    width: 100%;
+#footer-logo img {
+    width: 80%;
 
 
 }
@@ -204,7 +204,8 @@ footer #footer-logo img {
 Media Queries
 ----------------------- */
 
-/* mobile devices */
+
+/*For mobile devices */
 @media only screen and (max-width: 768px) {
 
     /*-------------
@@ -213,6 +214,7 @@ Media Queries
     .header-data {
         margin-left: 20px;
         margin-top: 0px;
+        padding-left: 15px;
     }
 
     .header-image {
@@ -233,6 +235,7 @@ Media Queries
     header h1 {
         font-size: 40px;
         padding-top: 40px;
+
     }
 
     /*---------------
@@ -256,6 +259,7 @@ Media Queries
 
     .player img {
         width: 100%;
+        height: auto;
 
 
     }
